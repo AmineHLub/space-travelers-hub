@@ -8,14 +8,18 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <Switch>
-        <Route exact path="/Rockets">
-          <Rockets />
-        </Route>
-        <Route exact path="/Missions">
-          <Missions />
-        </Route>
-      </Switch>
+      <main>
+        <div className="main-container">
+          <Switch>
+            <Route exact path="/Rockets">
+              <Rockets />
+            </Route>
+            <Route exact path="/Missions">
+              <Missions />
+            </Route>
+          </Switch>
+        </div>
+      </main>
     </Router>
   );
 }
