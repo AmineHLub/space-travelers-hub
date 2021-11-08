@@ -1,9 +1,8 @@
 import React from 'react';
-// eslint-disable-next-line no-unused-vars
 import { NavLink } from 'react-router-dom';
 import mylogo from './assets/images/mylogo.png';
 import './assets/Navbar.css';
-// create navbar
+
 const Navbar = () => (
   <nav className="navbar">
     <div className="navbar-container">
@@ -17,9 +16,9 @@ const Navbar = () => (
             <NavLink
               className="links"
               activeClassName="activelinks"
-              to="/Rocket"
+              to="/Rockets"
             >
-              Rocket
+              Rockets
             </NavLink>
 
           </li>
