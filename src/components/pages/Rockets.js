@@ -4,7 +4,7 @@ const Rockets = (rocketsObject) => {
   const { rockets } = rocketsObject;
   return (
     rockets.map((el) => (
-      <>
+      <div key={el.id}>
         <div>
           id :
           {' '}
@@ -22,7 +22,7 @@ const Rockets = (rocketsObject) => {
         </div>
         <span>img: </span>
         <img src={el.flickr_images} alt="img" />
-      </>
+      </div>
     ))
   );
 };
