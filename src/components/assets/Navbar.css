@@ -1,15 +1,48 @@
 .navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 75px;
+}
+
+.navbar-container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  border: 1px solid red;
+  border: 1px solid rgb(0, 0, 0);
+  margin: 0 3% 20px 3%;
 }
 
 .logoContainer {
-  width: 50px;
-  height: 50px;
+  width: 50%;
+  display: flex;
+  align-items: center;
 }
 
 .logo {
-  width: 100%;
-  height: 100%;
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+.linksContainer {
+  width: 25%;
+}
+
+.nav-elements {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.links {
+  text-decoration: none;
+}
+
+.activelinks {
+  text-decoration: underline;
+}
+
+.nav-elements > li:nth-child(3) {
+  border-right: 1px solid gray;
 }

@@ -6,3 +6,14 @@
   padding: 0;
   border: none;
 }
+
+main {
+  position: absolute;
+  top: 77px;
+  width: 100%;
+  z-index: -1;
+}
+
+.main-container {
+  margin: 10px 2% 0 2%;
+}
