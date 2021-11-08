@@ -13,9 +13,37 @@ const Navbar = () => (
       </div>
       <div className="linksContainer">
         <ul className="nav-elements">
-          <li>Rocket</li>
-          <li>Missions</li>
-          <li>My Profile</li>
+          <li>
+            <NavLink
+              className="links"
+              activeClassName="activelinks"
+              to="/Rocket"
+            >
+              Rocket
+            </NavLink>
+
+          </li>
+          <li>
+            <NavLink
+              className="links"
+              activeClassName="activelinks"
+              to="/Missions"
+            >
+              Missions
+            </NavLink>
+
+          </li>
+          <li> </li>
+          <li>
+            <NavLink
+              className="links"
+              activeClassName="activelinks"
+              to="/Profile"
+            >
+              My Profile
+            </NavLink>
+
+          </li>
         </ul>
       </div>
     </div>

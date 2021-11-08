@@ -14,6 +14,7 @@
 }
 
 .logoContainer {
+  width: 50%;
   display: flex;
   align-items: center;
 }
@@ -22,4 +23,26 @@
   width: 60px;
   height: 60px;
   margin-right: 10px;
+}
+
+.linksContainer {
+  width: 25%;
+}
+
+.nav-elements {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.links {
+  text-decoration: none;
+}
+
+.activelinks {
+  text-decoration: underline;
+}
+
+.nav-elements > li:nth-child(3) {
+  border-right: 1px solid gray;
 }
