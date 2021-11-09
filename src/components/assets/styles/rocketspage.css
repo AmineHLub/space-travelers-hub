@@ -8,6 +8,10 @@
   width: 100%;
 }
 
+.info-container {
+  margin-left: 10px;
+}
+
 .rocket-container {
   margin: 0 5% 1rem 5%;
 }
@@ -16,4 +20,13 @@
 .img-container > img {
   width: 150px;
   height: 110px;
+}
+
+.reserve-btn {
+  cursor: pointer;
+  background-color: rgb(47, 130, 253);
+  color: white;
+  width: 120px;
+  height: 30px;
+  border-radius: 8px;
 }
