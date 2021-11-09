@@ -1,4 +1,3 @@
-/* eslint-disable prefer-destructuring */
 import Axios from 'axios';
 
 const GET_ROCKETS = 'bookStore/books/GET_ROCKETS';
@@ -36,6 +35,11 @@ const reducer = (state = initialState, action) => {
   switch (action.type) {
     case GET_ROCKETS:
       return action.payload;
+    case RESERVE_ROCKETS: {
+      const newState = { ...state };
+      newState[action.payload].reservation = !newState[action.payload].reservation;
+      return newState; }
+
     default:
       return state;
   }

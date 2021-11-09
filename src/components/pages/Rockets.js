@@ -1,6 +1,7 @@
 import React from 'react';
 import '../assets/styles/rocketspage.css';
 import { useDispatch } from 'react-redux';
+import { reserveRockets } from '../../Redux/State/rocketsState';
 
 const Rockets = (rocketsObject) => {
   const dispatch = useDispatch();
@@ -15,13 +16,19 @@ const Rockets = (rocketsObject) => {
           <img src={rockets[el].information.flickr_images} alt="rocket-img" />
         </div>
         <div className="info-container d-flex">
+          <span>
+            {' '}
+            reserved:
+            {' '}
+            {`${rockets[el].reservation}`}
+          </span>
           <span>{rockets[el].information.id}</span>
           <h2 className="rocket-name">{rockets[el].information.rocket_name}</h2>
           <h3 className="rocket-type">{rockets[el].information.rocket_type}</h3>
           <button
             type="button"
             className="reserve-btn"
-            onClick={() => dispatch(el)}
+            onClick={() => dispatch(reserveRockets(el))}
           >
             Reserve Rocket
 
