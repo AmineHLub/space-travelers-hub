@@ -1,0 +1,19 @@
+.d-flex {
+  display: flex;
+}
+
+.info-container,
+.rockets-container {
+  flex-direction: column;
+  width: 100%;
+}
+
+.rocket-container {
+  margin: 0 5% 1rem 5%;
+}
+
+.img-container,
+.img-container > img {
+  width: 150px;
+  height: 110px;
+}
