@@ -20,7 +20,8 @@
     "import/no-unresolved": "off",
     "no-shadow": "off",
     "no-unused-vars": "off",
-    "arrow-body-style": "off"
+    "arrow-body-style": "off",
+    "max-len": "off"
   },
   "ignorePatterns": [
     "dist/",
