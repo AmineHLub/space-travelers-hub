@@ -10,32 +10,35 @@ const Rockets = (rocketsObject) => {
   return (
     <div className="rockets-container d-flex">
       {
-    arrOfIds.map((el) => (
-      <div className="rocket-container d-flex" key={rockets[el].information.id}>
-        <div className="img-container">
-          <img src={rockets[el].information.flickr_images} alt="rocket-img" />
-        </div>
-        <div className="info-container d-flex">
-          <span>
-            {' '}
-            reserved:
-            {' '}
-            {`${rockets[el].reservation}`}
-          </span>
-          <span>{rockets[el].information.id}</span>
-          <h2 className="rocket-name">{rockets[el].information.rocket_name}</h2>
-          <h3 className="rocket-type">{rockets[el].information.rocket_type}</h3>
-          <button
-            type="button"
-            className="reserve-btn"
-            onClick={() => dispatch(reserveRockets(el))}
-          >
-            Reserve Rocket
+    arrOfIds.map((el) => {
+      let message;
+      return (
+        <div className="rocket-container d-flex" key={rockets[el].information.id}>
+          <div className="img-container">
+            <img src={rockets[el].information.flickr_images} alt="rocket-img" />
+          </div>
+          <div className="info-container d-flex">
+            <h2 className="rocket-name">{rockets[el].information.rocket_name}</h2>
+            <p className="rocket-description">
+              {rockets[el].reservation
+                ? <span className="reserved-span">Reserved</span>
+                : null}
+              <span className="description-span">
+                {rockets[el].information.description}
+              </span>
+            </p>
+            <button
+              type="button"
+              className={rockets[el].reservation ? 'reserve-btn reserved' : 'reserve-btn'}
+              onClick={() => dispatch(reserveRockets(el))}
+            >
+              {rockets[el].reservation ? 'Cancel reservation' : 'Reserve Rocket'}
 
-          </button>
+            </button>
+          </div>
         </div>
-      </div>
-    ))
+      );
+    })
   }
 
     </div>
