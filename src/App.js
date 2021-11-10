@@ -6,10 +6,15 @@ import Navbar from './components/Navbar';
 import './App.css';
 import Rockets from './components/pages/Rockets';
 import Missions from './components/pages/Missions';
+import { fetchMissions } from './Redux/State/MissionsState';
 
 function App() {
-  const ObjOfRockets = useSelector((state) => state.rocketReducer);
   const dispatch = useDispatch();
+  const ObjMissions = useSelector((state) => state.missionsReducer);
+  const ObjOfRockets = useSelector((state) => state.rocketReducer);
+  useEffect(() => {
+    dispatch(fetchMissions());
+  }, []);
   useEffect(() => {
     dispatch(fetchRockets());
   }, []);
@@ -23,7 +28,7 @@ function App() {
               <Rockets rockets={ObjOfRockets} />
             </Route>
             <Route exact path="/Missions">
-              <Missions />
+              <Missions missions={ObjMissions} />
             </Route>
           </Switch>
         </div>
