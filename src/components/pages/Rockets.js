@@ -11,7 +11,6 @@ const Rockets = (rocketsObject) => {
     <div className="rockets-container d-flex">
       {
     arrOfIds.map((el) => {
-      let message;
       return (
         <div className="rocket-container d-flex" key={rockets[el].information.id}>
           <div className="img-container">

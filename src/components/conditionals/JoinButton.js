@@ -6,7 +6,6 @@ const JoinButton = (missionsObj) => {
   const { id } = missionsObj;
   const dispatch = useDispatch();
   const handleClick = (e) => {
-    console.log('clicked', e.target.id);
     dispatch(reserveMissions(e.target.id));
   };
   return (
