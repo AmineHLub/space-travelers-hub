@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import './App.css';
 import Rockets from './components/pages/Rockets';
 import Missions from './components/pages/Missions';
+import MyProfile from './components/pages/MyProfile';
 import { fetchMissions } from './Redux/State/MissionsState';
 
 function App() {
@@ -29,6 +30,9 @@ function App() {
             </Route>
             <Route exact path="/Missions">
               <Missions missions={ObjMissions} />
+            </Route>
+            <Route exact path="/Profile">
+              <MyProfile rockets={ObjOfRockets} missions={ObjMissions} />
             </Route>
           </Switch>
         </div>
