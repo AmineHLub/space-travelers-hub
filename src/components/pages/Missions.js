@@ -13,7 +13,6 @@ const Missions = (missionsObj) => {
 
   return (
     <>
-      <h1>Missions</h1>
       <div className="missions">
         <table>
           <thead key="1">
@@ -21,7 +20,7 @@ const Missions = (missionsObj) => {
               <th className="tableHeader">Mission</th>
               <th className="tableHeader">Description</th>
               <th className="tableHeader">Status</th>
-              <th className="tableHeader">This will be empty</th>
+              <th aria-label="join mission" />
             </tr>
           </thead>
           <tbody>
@@ -37,14 +36,14 @@ const Missions = (missionsObj) => {
                 </td>
                 <td>
                   <span
-                    className="member"
+                    className={mission.reservation ? 'member' : 'notMember'}
                   >
                     {mission.reservation ? 'Active Member' : 'NOT A MEMBER'}
                   </span>
                 </td>
                 <td className="joinMission">
                   <button
-                    className="joinMissionButton"
+                    className={mission.reservation ? 'leaveMissionButton' : 'joinMissionButton'}
                     id={mission.information.mission_id}
                     onClick={(e) => handleClick(e)}
                     type="button"

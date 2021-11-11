@@ -1,15 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+
 table {
   border: 1px solid black;
   padding: 0;
   border-collapse: collapse;
   width: 100%;
   margin: 0 0 3rem 0;
+  font-family: 'Roboto';
+}
+
+th {
+  border: 1px solid black;
 }
 
 td {
   border: 1px solid black;
   max-width: 1000px;
   padding: 10px;
+  text-align: center;
 }
 
 th {
@@ -18,15 +26,52 @@ th {
 }
 
 tr:nth-child(odd) {
-  background-color: lightgray;
+  background-color: #e4e4e4;
 }
 
-.joinButton {
+.notMember {
+  background-color: gray;
+  padding: 3px;
+  line-height: 23px;
+  color: white;
+  border-radius: 3px;
+}
+
+.member {
+  background-color: #2575a6;
+  padding: 3px;
+  line-height: 23px;
+  color: white;
+  border-radius: 3px;
+}
+
+.joinMission {
   text-align: center;
 }
 
-.joinButton button {
+.joinMissionButton {
   padding: 0.3rem 1rem;
   border-radius: 3px;
   cursor: pointer;
+  background-color: transparent;
+  border: 1px solid black;
+}
+
+.joinMissionButton:hover {
+  background-color: #2575a6;
+  color: white;
+}
+
+.leaveMissionButton {
+  padding: 0.3rem 1rem;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid red;
+  color: red
+}
+
+.leaveMissionButton:hover {
+  background-color: rgba(255, 0, 0, 0.7);
+  color: white;
 }

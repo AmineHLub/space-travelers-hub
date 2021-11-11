@@ -9,7 +9,7 @@
 
 main {
   position: absolute;
-  top: 77px;
+  top: 7rem;
   width: 100%;
   z-index: -1;
 }
