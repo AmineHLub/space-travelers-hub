@@ -13,20 +13,46 @@
 }
 
 .rocket-container {
-  margin: 0 5% 1rem 5%;
+  margin: 0 5% 1rem 1.5%;
 }
 
 .img-container,
 .img-container > img {
-  width: 150px;
-  height: 110px;
+  width: 215px;
+  height: 160px;
+}
+
+.reserved-span {
+  margin-right: 0.4rem;
+  background-color: #1da6ba;
+  color: white;
+  font-weight: bold;
+  font-size: 0.7rem;
+  padding: 0 10px;
+  border-radius: 30px;
 }
 
 .reserve-btn {
   cursor: pointer;
-  background-color: rgb(47, 130, 253);
+  background-color: rgba(19, 128, 249, 255);
   color: white;
-  width: 120px;
-  height: 30px;
+  align-self: flex-start;
+  padding: 10px;
   border-radius: 8px;
+}
+
+.reserve-btn:hover {
+  background-color: rgb(16, 79, 173);
+}
+
+.reserved {
+  background-color: white;
+  border: 1px solid gray;
+  color: gray;
+}
+
+.reserved:hover {
+  background-color: rgb(165, 18, 18);
+  border: none;
+  color: white;
 }
