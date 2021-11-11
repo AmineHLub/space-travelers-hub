@@ -35,15 +35,15 @@ const Missions = (missionsObj) => {
                   {mission.information.description}
                 </td>
                 <td>
-                  <span
-                    className={mission.reservation ? 'member' : 'notMember'}
-                  >
-                    {mission.reservation ? 'Active Member' : 'NOT A MEMBER'}
-                  </span>
+                  <div className={mission.reservation ? 'member' : 'notMember'}>
+                    <span>
+                      {mission.reservation ? 'Active Member' : 'NOT A MEMBER'}
+                    </span>
+                  </div>
                 </td>
                 <td className="joinMission">
                   <button
-                    className={mission.reservation ? 'leaveMissionButton' : 'joinMissionButton'}
+                    className={mission.reservation ? 'join-btn leaveMissionButton' : 'join-btn joinMissionButton'}
                     id={mission.information.mission_id}
                     onClick={(e) => handleClick(e)}
                     type="button"
