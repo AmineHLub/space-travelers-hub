@@ -6,11 +6,13 @@ table {
   border-collapse: collapse;
   width: 100%;
   margin: 0 0 3rem 0;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
 }
 
 th {
   border: 1px solid black;
+  height: 30px;
+  background-color: white;
 }
 
 td {
@@ -18,11 +20,6 @@ td {
   max-width: 1000px;
   padding: 10px;
   text-align: center;
-}
-
-th {
-  height: 30px;
-  background-color: white;
 }
 
 tr:nth-child(odd) {
@@ -68,7 +65,7 @@ tr:nth-child(odd) {
   cursor: pointer;
   background-color: transparent;
   border: 1px solid red;
-  color: red
+  color: red;
 }
 
 .leaveMissionButton:hover {
