@@ -9,7 +9,7 @@
   flex-direction: column;
   width: 100%;
   gap: 0.7rem;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
 }
 
 .info-container {
@@ -44,20 +44,25 @@
   padding: 10px;
   border-radius: 4px;
   font-size: 0.8rem;
+  height: 40px;
+  width: 145px;
 }
 
 .reserve-btn:hover {
   background-color: rgb(0, 102, 255);
+  font-weight: bold;
 }
 
 .reserved {
   background-color: white;
   border: 1px solid gray;
   color: gray;
+  font-weight: normal;
 }
 
 .reserved:hover {
   background-color: rgb(251, 23, 23);
   border: none;
   color: white;
+  font-weight: bold;
 }
