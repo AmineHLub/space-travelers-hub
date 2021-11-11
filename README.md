@@ -16,8 +16,7 @@ The application provides commercial and scientific space travel services. The ap
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
-
+[Netlify](https://space-travel-hub-amisai.netlify.app/)
 
 ## Getting Started
 
