@@ -16,7 +16,8 @@ const Navbar = () => (
             <NavLink
               className="links"
               activeClassName="activelinks"
-              to="/Rockets"
+              exact
+              to="/"
             >
               Rockets
             </NavLink>
@@ -26,6 +27,7 @@ const Navbar = () => (
             <NavLink
               className="links"
               activeClassName="activelinks"
+              exact
               to="/Missions"
             >
               Missions
@@ -35,6 +37,7 @@ const Navbar = () => (
             <NavLink
               className="links"
               activeClassName="activelinks"
+              exact
               to="/Profile"
             >
               My Profile

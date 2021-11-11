@@ -25,7 +25,7 @@ function App() {
       <main>
         <div className="main-container">
           <Switch>
-            <Route exact path="/Rockets">
+            <Route exact path="/">
               <Rockets rockets={ObjOfRockets} />
             </Route>
             <Route exact path="/Missions">
