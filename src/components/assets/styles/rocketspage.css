@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+
 .d-flex {
   display: flex;
 }
@@ -6,6 +8,8 @@
 .rockets-container {
   flex-direction: column;
   width: 100%;
+  gap: 0.7rem;
+  font-family: 'Roboto';
 }
 
 .info-container {
@@ -38,11 +42,12 @@
   color: white;
   align-self: flex-start;
   padding: 10px;
-  border-radius: 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
 }
 
 .reserve-btn:hover {
-  background-color: rgb(16, 79, 173);
+  background-color: rgb(0, 102, 255);
 }
 
 .reserved {
@@ -52,7 +57,7 @@
 }
 
 .reserved:hover {
-  background-color: rgb(165, 18, 18);
+  background-color: rgb(251, 23, 23);
   border: none;
   color: white;
 }

@@ -30,9 +30,7 @@ const Navbar = () => (
             >
               Missions
             </NavLink>
-
           </li>
-          <li> </li>
           <li>
             <NavLink
               className="links"
